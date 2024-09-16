@@ -27,6 +27,7 @@ import math
 import os
 import shutil
 import traceback
+import sys
 
 from selenium import webdriver
 
@@ -605,7 +606,7 @@ if __name__ == '__main__':
   #                    "July1_the_ville_isabella_maria_klaus-step-3-21")
   # rs.open_server()
 
-  origin = input("Enter the name of the forked simulation: ").strip()
+  origin = sys.argv[1].strip()
   target = input("Enter the name of the new simulation: ").strip()
 
   rs = ReverieServer(origin, target)
