@@ -102,6 +102,7 @@ def UIST_Demo(request):
   return demo(request, "March20_the_ville_n25_UIST_RUN-step-1-141", 2160, play_speed="3")
 
 
+# HTTP request for the home screen
 def home(request):
   f_curr_sim_code = "temp_storage/curr_sim_code.json"
   f_curr_step = "temp_storage/curr_step.json"
@@ -145,7 +146,7 @@ def home(request):
              "persona_names": persona_names,
              "persona_init_pos": persona_init_pos,
              "mode": "simulate"}
-  template = "home/home.html"
+  template = "home/home.html" # Home layout here, likely
   return render(request, template, context)
 
 
