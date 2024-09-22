@@ -1,0 +1,7 @@
+{
+  "search.exclude": {
+    "**/env/**": true,
+    "**/main_env/**": true,
+    "**/site-packages/**": true
+  }
+}
