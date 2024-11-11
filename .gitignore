@@ -1,3 +1,4 @@
+# To ensure that the API key isn't uploaded
 reverie/backend_server/utils.py
 frontend_server/settings/local.py
 storage/*
